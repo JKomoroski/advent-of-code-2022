@@ -4,12 +4,12 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
-public class DayOne {
+public class Day01 {
 
     public static void main(String[] args) throws Exception {
         List<Integer> groups = new ArrayList<>();
 
-        final var iterator = StaticUtils.readFile("./input_1.txt").iterator();
+        final var iterator = StaticUtils.readFile("./input_01.txt").iterator();
 
         while (iterator.hasNext()) {
             final var food = new ArrayList<Integer>();

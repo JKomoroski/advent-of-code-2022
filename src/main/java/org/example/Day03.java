@@ -4,15 +4,15 @@ import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-public class DayThree {
+public class Day03 {
 
     public static void main(String[] args) throws Exception {
-        List<String> lines = StaticUtils.readFile("./input_3.txt");
+        List<String> lines = StaticUtils.readFile("./input_03.txt");
 
         final var prioritySum = lines.stream()
                 .map(s -> new String[]{s.substring(0, s.length() / 2), s.substring(s.length() / 2)})
                 .map(p -> findFirstIntersectingCharacter(p[0], p[1]))
-                .mapToInt(DayThree::charToPriority)
+                .mapToInt(Day03::charToPriority)
                 .sum();
 
         System.out.println("Part 1 Solution: " + prioritySum);
@@ -27,7 +27,7 @@ public class DayThree {
             chars1.retainAll(chars2);
 
             final var sum = chars1.stream()
-                    .mapToInt(DayThree::charToPriority)
+                    .mapToInt(Day03::charToPriority)
                     .sum();
 
             badgePriority += sum;

@@ -1,15 +1,15 @@
 package org.example;
 
-import static org.example.DayTwo.RPS.M_PAPER;
-import static org.example.DayTwo.RPS.M_ROCK;
-import static org.example.DayTwo.RPS.M_SCISSORS;
-import static org.example.DayTwo.RPS.O_PAPER;
-import static org.example.DayTwo.RPS.O_ROCK;
-import static org.example.DayTwo.RPS.O_SCISSORS;
+import static org.example.Day02.RPS.M_PAPER;
+import static org.example.Day02.RPS.M_ROCK;
+import static org.example.Day02.RPS.M_SCISSORS;
+import static org.example.Day02.RPS.O_PAPER;
+import static org.example.Day02.RPS.O_ROCK;
+import static org.example.Day02.RPS.O_SCISSORS;
 
 import java.util.List;
 
-public class DayTwo {
+public class Day02 {
 
     static final int WIN = 6;
     static final int DRAW = 3;
@@ -69,20 +69,20 @@ public class DayTwo {
     }
 
     public static void main(String[] args) throws Exception {
-        List<String> lines = StaticUtils.readFile("./input_2.txt");
+        List<String> lines = StaticUtils.readFile("./input_02.txt");
 
         var sum = lines.stream()
                 .map(s -> s.replace(O_ROCK.getValue(), M_ROCK.getValue()))
                 .map(s -> s.replace(O_PAPER.getValue(), M_PAPER.getValue()))
                 .map(s -> s.replace(O_SCISSORS.getValue(), M_SCISSORS.getValue()))
-                .map(DayTwo::calculateScore)
+                .map(Day02::calculateScore)
                 .mapToInt(Integer::intValue)
                 .sum();
 
         System.out.println("First Solution: " + sum);
 
         var sum2 = lines.stream()
-                .map(DayTwo::calculateSelectionAndResult)
+                .map(Day02::calculateSelectionAndResult)
                 .mapToInt(Integer::intValue)
                 .sum();
 
