@@ -1,4 +1,4 @@
-package org.example;
+package ski.komoro;
 
 import java.io.IOException;
 import java.nio.file.Files;

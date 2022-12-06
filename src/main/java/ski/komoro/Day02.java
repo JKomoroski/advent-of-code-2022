@@ -1,11 +1,11 @@
-package org.example;
+package ski.komoro;
 
-import static org.example.Day02.RPS.M_PAPER;
-import static org.example.Day02.RPS.M_ROCK;
-import static org.example.Day02.RPS.M_SCISSORS;
-import static org.example.Day02.RPS.O_PAPER;
-import static org.example.Day02.RPS.O_ROCK;
-import static org.example.Day02.RPS.O_SCISSORS;
+import static ski.komoro.Day02.RPS.M_PAPER;
+import static ski.komoro.Day02.RPS.M_ROCK;
+import static ski.komoro.Day02.RPS.M_SCISSORS;
+import static ski.komoro.Day02.RPS.O_PAPER;
+import static ski.komoro.Day02.RPS.O_ROCK;
+import static ski.komoro.Day02.RPS.O_SCISSORS;
 
 import java.util.List;
 

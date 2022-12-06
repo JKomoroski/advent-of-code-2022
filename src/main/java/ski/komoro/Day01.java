@@ -1,4 +1,4 @@
-package org.example;
+package ski.komoro;
 
 import java.util.ArrayList;
 import java.util.Comparator;

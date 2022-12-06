@@ -1,12 +1,9 @@
-package org.example;
+package ski.komoro;
 
 import java.util.ArrayDeque;
 import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
 import java.util.Deque;
 import java.util.List;
-import java.util.Stack;
 import java.util.stream.IntStream;
 
 public class Day05 {

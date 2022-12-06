@@ -1,7 +1,6 @@
-package org.example;
+package ski.komoro;
 
 import java.util.Arrays;
-import java.util.List;
 import java.util.stream.Collectors;
 
 public class Day04 {
