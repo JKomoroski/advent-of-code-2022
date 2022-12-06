@@ -65,11 +65,11 @@ public class Day05 {
 
         for (Move move : moves) {
             final var strings = new ArrayDeque<String>();
-            for (int i = 0; i < move.count; i++) {
-                strings.addFirst(deques2.get(move.src).removeFirst());
+            for (int i = 0; i < move.count(); i++) {
+                strings.addFirst(deques2.get(move.src()).removeFirst());
             }
 
-            strings.forEach(deques2.get(move.dest)::addFirst);
+            strings.forEach(deques2.get(move.dest())::addFirst);
         }
 
         System.out.println("Problem Two Solution: ");
@@ -100,15 +100,5 @@ public class Day05 {
         return new Move(Integer.parseInt(s[1]), Integer.parseInt(s[3]), Integer.parseInt(s[5]));
     }
 
-    static class Move {
-        int count;
-        int src;
-        int dest;
-
-        Move(int count, int src, int dest) {
-            this.count = count;
-            this.src = src;
-            this.dest = dest;
-        }
-    }
+    static record Move (int count, int src, int dest) {}
 }
