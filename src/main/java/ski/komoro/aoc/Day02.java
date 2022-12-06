@@ -1,11 +1,11 @@
-package ski.komoro;
+package ski.komoro.aoc;
 
-import static ski.komoro.Day02.RPS.M_PAPER;
-import static ski.komoro.Day02.RPS.M_ROCK;
-import static ski.komoro.Day02.RPS.M_SCISSORS;
-import static ski.komoro.Day02.RPS.O_PAPER;
-import static ski.komoro.Day02.RPS.O_ROCK;
-import static ski.komoro.Day02.RPS.O_SCISSORS;
+import static ski.komoro.aoc.Day02.RPS.M_PAPER;
+import static ski.komoro.aoc.Day02.RPS.M_ROCK;
+import static ski.komoro.aoc.Day02.RPS.M_SCISSORS;
+import static ski.komoro.aoc.Day02.RPS.O_PAPER;
+import static ski.komoro.aoc.Day02.RPS.O_ROCK;
+import static ski.komoro.aoc.Day02.RPS.O_SCISSORS;
 
 import java.util.List;
 
@@ -64,7 +64,7 @@ public class Day02 {
                 return M_SCISSORS;
             }
 
-            return null;
+            throw new IllegalArgumentException("Illegal input: " + s);
         }
     }
 

@@ -1,4 +1,4 @@
-package ski.komoro;
+package ski.komoro.aoc;
 
 import java.util.HashSet;
 import java.util.Set;

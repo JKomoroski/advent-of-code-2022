@@ -1,4 +1,4 @@
-package ski.komoro;
+package ski.komoro.aoc;
 
 import java.util.List;
 import java.util.Set;
@@ -55,9 +55,9 @@ public class Day03 {
                 .orElseThrow();
     }
 
-    static int charToPriority(char character) {
-        return Character.isLowerCase(character)
-                ? (int) character - 96
-                : (int) character - 38;
+    static int charToPriority(char c) {
+        return Character.isLowerCase(c)
+                ? c - 96
+                : c - 38;
     }
 }

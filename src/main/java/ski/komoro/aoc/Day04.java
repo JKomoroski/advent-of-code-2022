@@ -1,4 +1,4 @@
-package ski.komoro;
+package ski.komoro.aoc;
 
 import java.util.Arrays;
 import java.util.stream.Collectors;
