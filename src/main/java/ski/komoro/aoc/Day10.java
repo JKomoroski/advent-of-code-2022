@@ -6,7 +6,7 @@ import java.util.List;
 public class Day10 {
 
     public static void main(String[] args) throws Exception {
-        List<String> lines = StaticUtils.readFile("./input_10_sample.txt");
+        List<String> lines = StaticUtils.readFile("./input_10.txt");
 
         final var instructions = lines.stream().map(Instruction::fromString).toList();
         final var probeOn = List.of(20, 60, 100, 140, 180, 220);
